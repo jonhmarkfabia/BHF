@@ -31,10 +31,21 @@
         <nav>
           <ul class="flex space-x-9">
             <li><a href="index.html" class="hover:text-accent font-bold underline">Home</a></li>
-            <li><a href="branch.html" class="hover:text-accent">Branch</a></li>
+            <li><a href="branch.html" class="hover:text-accent">Branches</a></li>
             <li><a href="about.html" class="hover:text-accent">About</a></li>
           </ul>
         </nav>
+        <button id="toggleDark" class="ml-4 text-xl px-3 py-1 rounded bg-primary text-white dark:bg-white dark:text-primary transition-colors">🌓</button>
+            <script>
+                const toggleBtn = document.getElementById('toggleDark');
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+                });
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            </script>
       </div>
     </header>
     <main class="pt-28">
@@ -91,9 +102,9 @@
           <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
             BHF baguio group of companies 
           </p>
-          <a href="branch.html" class="inline-block px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition">
-            See Branches
-          </a>
+            <a href="branch.html" class="inline-block px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition">
+              Start Your Journey
+            </a>
           <video width="800" height="240" controls autoplay loop muted class="mt-4">
             <source src="BHF.mp4" type="video/mp4">
             Your browser does not support the video tag.
