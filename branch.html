@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3d4795',
+              secondary: '#3d4795',
+              accent: '#00cfc1'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4  py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Logo" class="w-13 h-12 rounded-full" />
+          <span class="text-xl font-bold text-primary dark:text-white"></span>
+        </div>
+        <nav>
+          <ul class="flex space-x-9">
+            <li><a href="index.html" class="hover:text-accent">Home</a></li>
+            <li><a href="branch.html" class="hover:text-accent font-bold underline">Branches</a></li>
+            <li><a href="vision.html" class="hover:text-accent">Vision</a></li>
+            <li><a href="about.html" class="hover:text-accent">About</a></li>
+          </ul>
+        </nav>
+        <button id="toggleDark" class="ml-4 text-xl px-1 py-1 rounded bg-primary text-white dark:bg-white dark:text-primary transition-colors">🌔</button>
+            <script>
+                const toggleBtn = document.getElementById('toggleDark');
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+                });
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            </script>
+      </div>
+    </header>
+    <main class="pt-28">
+    </main>
+    </script>
+<head>
+    <title>Baguio Businesses - Map Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+
+        .map-grid-container {
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; 
+            padding: 20px;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background-color: #fff;
+            border-radius: 8px;
+            
+        }
+
+        .map-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding-bottom: 10px;
+        }
+
+        .map-item h3 {
+            text-align: center;
+            margin: 15px 0 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .map-item h4 {
+            text-align: center;
+            margin: 15px 0 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+  
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+
+        @media (max-width: 767px) {
+            .map-grid-container {
+                grid-template-columns: 1fr; 
+                padding: 10px;
+                gap: 15px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .map-grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    </style>
+</head>
+<section class="py-16 text-center max-w-4xl mx-auto px-4">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Our Business Locations in Baguio <span class="text-#3d4795-500"></span>
+  </h2>
+  <p class="text-gray-600 dark:text-gray-400 text-lg mb-8">
+  Baguio City, Philippines
+  </p>
+</section>
+<body>
+
+    <div class="map-grid-container">
+
+        <div class="map-item">
+            <h3>217 Bonifacio Residences</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751607354492!6m8!1m7!1sgdZK02JxGP7iFf2ykRwhsg!2m2!1d16.41653673950312!2d120.5990763248867!3f57.15806235066213!4f7.122336259533455!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>Barangay, 217 Upper Bonifacio St, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>BHF Main Pawnshop</h3>
+            <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1751607494546!6m8!1m7!1skjvkhDY43piV16WprnQaNA!2m2!1d16.41347865003789!2d120.5959872410268!3f262.32987089284734!4f4.296782035228304!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>CH7W+996, BHF, Lower Session Road, Baguio City, Benguet, Baguio City</h4>
+        </div>
+
+        
+        <div class="map-item">
+            <h3>BHF Lower Bonifacio Pawnshop</h3>
+            <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1751607528824!6m8!1m7!1s2FfCA59fuUSr39yEP1Q6mQ!2m2!1d16.41761180424965!2d120.5963937499483!3f264.11945!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>67-69 Lower Bonifacio St, Baguio, Benguet</h4>
+        </div>
+
+        
+        <div class="map-item">
+            <h3>BHF Kayang Pawnshop</h3>
+            <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1751598577964!6m8!1m7!1st6uEuHKyrYVZkWjQBWgcvQ!2m2!1d16.41461045931089!2d120.5938288587183!3f178.80234936740118!4f-3.991807769115212!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>G/F L2-B1 Kayang Business Center, Kayang St, Cor Chugum St, Brgy AZKCO, Baguio, 2600 Benguet</h4>
+        </div>
+
+        
+        <div class="map-item">
+            <h3>BHF Leonard Pawnshop</h3>
+            <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1751598771853!6m8!1m7!1s6fyH8WDJy_qsGWWuuJhi4w!2m2!1d16.41036740473333!2d120.5999664945285!3f83.82498277144272!4f-0.9430007016747481!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>#3 Leonard Wood Rd, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        
+        <div class="map-item">
+            <h3>BHF La Trinidad Pawnshop</h3>
+            <div class="iframe-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1751599021148!6m8!1m7!1sEi1YloknlLInlDjOhfMCBA!2m2!1d16.44335987657464!2d120.5922661750334!3f59.071222511895826!4f6.708582116261709!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>1 Km4, La Trinidad, 2601 Benguet, Philippines</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>BHF Lending</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751607528824!6m8!1m7!1s2FfCA59fuUSr39yEP1Q6mQ!2m2!1d16.41761180424965!2d120.5963937499483!3f264.11945!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>Juniper building, 67-69 Lower Bonifacio St, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>Bloomfield Hotel</h3>
+            <div class="iframe-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!4v1751607690494!6m8!1m7!1siiXEGTbG5hllojkpO0sj_A!2m2!1d16.41044130427495!2d120.5999208404533!3f82.1579795535564!4f5.681265443204978!5f1.4847385010894216" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>#3 Leonard Wood Rd, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>Cafe Leche</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751607772913!6m8!1m7!1sZMWRIc2aGFheFuB_hWJQrw!2m2!1d16.41644688503661!2d120.5990868605144!3f67.01828187394077!4f4.18881863614736!5f1.9835312157463751" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>217 Upper Bonifacio St, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>BHF Gemline Main</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751607903670!6m8!1m7!1skjvkhDY43piV16WprnQaNA!2m2!1d16.41347865003789!2d120.5959872410268!3f237.53792738768425!4f-6.532841543407457!5f1.7714109178313855" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>GEBM Bldg. Lower, Session Rd, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>BHF Gemline SM</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751608195072!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tnT0dSX1FF!2m2!1d16.40950168326231!2d120.599549988278!3f248.60001370523827!4f-7.237819169413285!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>2nd Floor SM City Baguio, Baguio, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>Lemon & Olives Greek Taverna</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751608251319!6m8!1m7!1s-QOm15JU8lyKicBicbwBPQ!2m2!1d16.41102220662292!2d120.6229673785083!3f114.2796807986217!4f-19.010816611412935!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>26 Outlook Dr S, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>Patch Cafe</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751608302743!6m8!1m7!1s6fyH8WDJy_qsGWWuuJhi4w!2m2!1d16.41036740473333!2d120.5999664945285!3f91.2977837105093!4f8.611017952657903!5f1.8299075643499827" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>Bloomfield Hotel, 3 Leonard Wood Road, Brgy. Salud Mitra, Baguio City, 2600 Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>SDC (Session Diagnostic Center)</h3>
+            <div class="iframe-container">
+<iframe src="https://www.google.com/maps/embed?pb=!4v1751608339076!6m8!1m7!1skjvkhDY43piV16WprnQaNA!2m2!1d16.41347865003789!2d120.5959872410268!3f188.8620193345851!4f0.314363385007141!5f1.6274371437033115" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>3rd Floor Anita Theresa Building, 6 Session Road, Baguio City, Benguet</h4>
+        </div>
+
+        <div class="map-item">
+            <h3>Studio AU</h3>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1751608382721!6m8!1m7!1sInAuC0VB31RURT0IxTDb2A!2m2!1d16.41663010531195!2d120.5990814171069!3f104.39335126423907!4f4.711194142062027!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h4>Barangay, 217 Upper Bonifacio Street, 217 Bonifacio Residences, Baguio City, 2600 Benguet</h4>
+        </div>
+
+    </div>
+
+  
+</body>
+
+<div class="text-center md:text-center">
+  <a href="index.html" class="inline-block px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition">
+            Back to Homepage</a>
+        </div>
+
+
+
+
+
+<footer class="bg-gray-100 dark:bg-gray-800 mt-20 py-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center"> <h4 class="font-bold text-lg mb-4">Support Links</h4>
+      <ul class="flex justify-center space-x-4 text-sm"> <li><a href="faqs.html" class="hover:underline">FAQs</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        <li><a href="agreement.html" class="hover:underline">Terms of Agreement</a></li>
+        <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-10">
+    © 2025 BHF | All rights Reserved.
+  </div>
+</footer>
+      </body>
+      </html>
+      

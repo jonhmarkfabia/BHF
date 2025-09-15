@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3d4795',
+              secondary: '#3d4795',
+              accent: '#00cfc1'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4  py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Logo" class="w-13 h-12 rounded-full" />
+          <span class="text-xl font-bold text-primary dark:text-white"></span>
+        </div>
+        <nav>
+          <ul class="flex space-x-9">
+            <li><a href="index.html" class="hover:text-accent font-bold underline">Home</a></li>
+            <li><a href="branch.html" class="hover:text-accent">Branches</a></li>
+             <li><a href="vision.html" class="hover:text-accent">Vision</a></li>
+            <li><a href="about.html" class="hover:text-accent">About</a></li>
+          </ul>
+        </nav>
+        <button id="toggleDark" class="ml-4 text-xl px-1 py-1 rounded bg-primary text-white dark:bg-white dark:text-primary transition-colors">🌔</button>
+            <script>
+                const toggleBtn = document.getElementById('toggleDark');
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+                });
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            </script>
+      </div>
+    </header>
+    <main class="pt-28">
+    </main>
+    </script>
+<section class="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden pt-28 pb-16">
+  <img src="https://i.makeagif.com/media/12-12-2022/zWCgu9.gif" alt="Background" class="absolute w-full h-full object-cover opacity-30 blur-sm" />
+  <style>
+    @keyframes fade-in-up {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out;
+    }
+    
+    @keyframes zoom-in {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .animate-zoom-in {
+      animation: zoom-in 1s ease-out;
+    }
+    </style>
+  <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto p-6">
+    <div class="bg-white/80 dark:bg-black/50 backdrop-blur rounded-lg p-8 shadow-lg animate-fade-up">
+      <h1 class="text-4xl font-bold mb-4">
+        Welcome to <span class="text-Navy-600">BHF</span>!
+      </h1>
+      <p class="text-gray-700 dark:text-gray-300 mb-6">
+        BHF –Baguio Group of Companies is currently one of the thriving business entities in the city.
+    </div>
+
+    <div class="relative animate-fade-up">
+      <img src="https://i.pinimg.com/1200x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Food" class="rounded-lg shadow-2xl object-cover w-full">
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gray-100 dark:bg-gray-900">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <img 
+            src="https://i.pinimg.com/736x/77/9f/ae/779faed98b3a06c458850445eb99bd38.jpg" 
+            alt="Dining Experience" 
+            class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+          />
+        </div>
+    
+        <div class="text-center md:text-left">
+          <h2 class="text-4xl font-extrabold text-gray-800 dark:text-white mb-6 leading-tight">
+            Get to know <span class="text-primary"> </span>
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+            BHF baguio group of companies 
+          </p>
+            <a href="branch.html" class="inline-block px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition">
+              See Branches
+            </a>
+          <video  id="bhfVideo" width="800" height="240" controls autoplay loop muted class="mt-4">
+            <source src="BHF.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <script>
+  const video = document.getElementById('bhfVideo');
+  video.playbackRate = 0.50;
+</script>
+        </div>
+    
+      </div>
+    </section>
+<section class="py-16 text-center max-w-4xl mx-auto px-4">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    BHF BAGUIO GROUP OF COMPANIES <span class="text-#3d4795-500"></span>
+  </h2>
+  <p class="text-gray-600 dark:text-gray-400 text-lg mb-8">
+    217 Bonifacio Residences, Upper Bonifacio Joly Ghost Proper, Baguio City, Philippines
+  </p>
+  <a href="about.html" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-md text-lg shadow-lg transition">
+    Learn More
+  </a>
+</section>
+      
+
+    <main>
+       
+<div class="flex flex-col items-center justify-center mt-8 mb-12">
+    <div class="flex items-center">
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search what branch..." 
+        class="p-3 rounded-l-md border border-blue-300 dark:border-blue-600 focus:outline-none focus:ring-2 focus:ring-primary w-72"
+      />
+      <button 
+        id="search-button" 
+        class="bg-primary text-white p-3 rounded-r-md hover:bg-secondary transition">
+        Search
+      </button>
+    </div>
+  </div>
+  
+
+  <div id="results-container" class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-6">
+    </div>
+
+  
+  
+  <script>
+    const caterers = [
+            { name: "217 Bonifacio Residences", details: "Budget Hotel & Women's Dormitory", image: "https://i.pinimg.com/736x/63/32/78/633278a50305fa33b8799c4c7d09ffec.jpg", url: ""}, 
+            { name: "BHF Baguio Pawnshop", details: "Trusted pawnshop & jewelry deals.", image: "https://i.pinimg.com/736x/ca/44/d0/ca44d0ac5fc884610f73d894b263970c.jpg", url: "" },
+            { name: "BHF LENDING", details: "Lending Company in Baguio City", image: "https://i.pinimg.com/736x/b9/92/ec/b992ecfad277b180c7c3f1067d4073f6.jpg", url: "" },
+            { name: "Bloomfield Hotel", details: "Oasis where you can escape hectic pace of the city", image: "https://i.pinimg.com/736x/62/55/aa/6255aa0f2d262aa97fb118d44d467061.jpg", url: "" },
+            { name: "Cafe Leche", details: "Brunch, coffee, chill.", image: "https://i.pinimg.com/736x/90/60/1a/90601aa9f460275b5158fbbd860188cb.jpg", url: "" },
+            { name: "BHF Gemline", details: "Affordable, quality jewelry.", image: "https://i.pinimg.com/736x/8a/d3/34/8ad334035a9155e3a0a1713d423c28d9.jpg", url: "" },
+            { name: "Lemon & Olives Greek Taverna", details: "A family restaurant specializes Greek cuisine.", image: "https://i.pinimg.com/736x/3c/7f/2f/3c7f2f94d4d523fe82b72b8e6f6df72e.jpg", url: "" },
+            { name: "Patch Cafe", details: "Modern vibes, Baguio charm.", image: "https://i.pinimg.com/736x/68/71/00/687100c0e371115eb5d5818e97d2a393.jpg", url: "" },
+            { name: "SDC", details: "Session Diagnostic Center", image: "https://i.pinimg.com/736x/87/3a/ed/873aed7f2cea7c865dd5a8bb2704bd22.jpg", url: "" },
+            { name: "Studio AU", details: "Modern furniture for modern spaces.", image: "https://i.pinimg.com/736x/97/17/06/971706369db7d35257be93736dd42cd0.jpg", url: "" },
+          ];
+  
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const resultsContainer = document.getElementById("results-container");
+  
+    function displayCaterers(list) {
+      resultsContainer.innerHTML = "";
+  
+      if (list.length === 0) {
+        resultsContainer.innerHTML = "<p class='text-center text-gray-500 col-span-full'>No results found.</p>";
+        return;
+      }
+  
+      list.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "bg-white dark:bg-gray-700 p-4 rounded-lg shadow hover:scale-105 transition text-center";
+  
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" class="h-20 mx-auto mb-3 object-contain" />
+          <h3 class="font-bold text-md mb-1">${item.name}</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">${item.details}</p>
+<a href="${item.url}" target="_blank" class="text-sm border border-primary text-primary dark:text-white px-4 py-1 rounded hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary transition">Visit</a>
+        `;
+  
+        resultsContainer.appendChild(card);
+      });
+    }
+  
+    function handleSearch() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const filtered = caterers.filter(item => item.name.toLowerCase().includes(searchTerm));
+      displayCaterers(filtered);
+    }
+  
+    searchButton.addEventListener("click", handleSearch);
+    searchInput.addEventListener("keypress", e => {
+      if (e.key === "Enter") handleSearch();
+    });
+  
+
+    displayCaterers(caterers);
+  </script>
+
+
+      </div>
+    </div>
+  </section>
+          
+      
+        </main>
+      
+    
+ <footer class="bg-gray-100 dark:bg-gray-800 mt-20 py-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center"> <h4 class="font-bold text-lg mb-4">Support Links</h4>
+      <ul class="flex justify-center space-x-4 text-sm"> <li><a href="faqs.html" class="hover:underline">FAQs</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        <li><a href="agreement.html" class="hover:underline">Terms of Agreement</a></li>
+        <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-10">
+    © 2025 BHF | All rights Reserved.
+  </div>
+</footer>
+      </body>
+      </html>
+      

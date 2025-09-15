@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3d4795',
+              secondary: '#3d4795',
+              accent: '#00cfc1'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4  py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Logo" class="w-13 h-12 rounded-full" />
+          <span class="text-xl font-bold text-primary dark:text-white"></span>
+        </div>
+        <nav>
+          <ul class="flex space-x-9">
+            <li><a href="index.html" class="hover:text-accent font-bold underline">Home</a></li>
+            <li><a href="branch.html" class="hover:text-accent">Branch</a></li>
+            <li><a href="about.html" class="hover:text-accent">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="pt-28">
+    </main>
+    </script>
+<section class="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden pt-28 pb-16">
+  <img src="https://i.makeagif.com/media/12-12-2022/zWCgu9.gif" alt="Background" class="absolute w-full h-full object-cover opacity-30 blur-sm" />
+  <style>
+    @keyframes fade-in-up {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fade-in-up 1s ease-out;
+    }
+    
+    @keyframes zoom-in {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .animate-zoom-in {
+      animation: zoom-in 1s ease-out;
+    }
+    </style>
+
+  <main class="pt-28 px-6 max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h1>
+    <div class="space-y-6">
+      <div class="bg-white dark:bg-gray-800 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-2">What is MySeat?</h2>
+        <p class="text-gray-700 dark:text-gray-300">MySeat is your all-in-one hub for discovering restaurants, placing orders, and booking catering services with ease.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-2">How do I place an order?</h2>
+        <p class="text-gray-700 dark:text-gray-300">Simply visit our Order page, browse the featured restaurants, and click on your preferred place to view their menu and place your order.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-2">Can I book catering for events?</h2>
+        <p class="text-gray-700 dark:text-gray-300">Yes! Head to our Caterers page to explore available services, view details, and contact your preferred provider directly.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 border border-gray-200 dark:border-gray-700 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-2">Is there a delivery charge?</h2>
+        <p class="text-gray-700 dark:text-gray-300">Delivery fees vary by restaurant and will be displayed during checkout before confirming your order.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

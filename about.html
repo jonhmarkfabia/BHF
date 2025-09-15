@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3d4795',
+              secondary: '#3d4795',
+              accent: '#00cfc1'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4  py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src= "https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Logo" class="w-13 h-12 rounded-full" />
+          <span class="text-xl font-bold text-primary dark:text-white"></span>
+        </div>
+        <nav>
+          <ul class="flex space-x-9">
+            <li><a href="index.html" class="hover:text-accent">Home</a></li>
+            <li><a href="branch.html" class="hover:text-accent">Branches</a></li>
+            <li><a href="vision.html" class="hover:text-accent">Vision</a></li>
+            <li><a href="about.html" class="hover:text-accent font-bold underline">About</a>
+          </li>
+          </ul>
+        </nav>
+        <button id="toggleDark" class="ml-4 text-xl px-1 py-1 rounded bg-primary text-white dark:bg-white dark:text-primary transition-colors">🌔</button>
+            <script>
+                const toggleBtn = document.getElementById('toggleDark');
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+                });
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            </script>
+      </div>
+    </header>
+    <main class="pt-28">
+    </main>
+    </script>
+
+    <main class="pt-24">
+      <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-8 animate-fadeIn">
+          <h1 class="text-4xl font-bold text-primary dark:text-yellow-300">About BHF</h1>
+          <p class="text-lg text-gray-700 dark:text-gray-300">
+            BHF –Baguio Group of Companies is currently one of the thriving business entities in the city. It’s humble beginning date back to early 90's.
+          </p>
+          <p class="text-lg text-gray-700 dark:text-gray-300">
+          BHF-Baguio Group of Companies has rightfully instilled itself as a part of Baguio City. It labors to live up to its reputation of quality products and courteous and efficient services while searching for other venues to reach out to the community it serves.
+          </p>
+          <img src="https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="BINI Colet" class="mx-auto rounded-xl shadow-md w-full max-w-xl" />
+           <p class="text-lg text-gray-700 dark:text-gray-300">
+           This branch of the business is more often referred to as the “charitable arm” 
+          </p>
+        </div>
+      </section>
+    </main>
+
+   
+<footer class="bg-gray-100 dark:bg-gray-800 mt-20 py-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center"> <h4 class="font-bold text-lg mb-4">Support Links</h4>
+      <ul class="flex justify-center space-x-4 text-sm"> <li><a href="faqs.html" class="hover:underline">FAQs</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        <li><a href="agreement.html" class="hover:underline">Terms of Agreement</a></li>
+        <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-10">
+    © 2025 BHF | All rights Reserved.
+  </div>
+</footer>
+    

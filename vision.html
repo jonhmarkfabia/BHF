@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3d4795',
+              secondary: '#3d4795',
+              accent: '#00cfc1'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors">
+
+    <header class="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4  py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/12/1f/00/121f00ef5f9bc914cdb83e0a06d03682.jpg" alt="MySeat Logo" class="w-13 h-12 rounded-full" />
+          <span class="text-xl font-bold text-primary dark:text-white"></span>
+        </div>
+        <nav>
+          <ul class="flex space-x-9">
+            <li><a href="index.html" class="hover:text-accent">Home</a></li>
+            <li><a href="branch.html" class="hover:text-accent">Branches</a></li>
+            <li><a href="vision.html" class="hover:text-accent font-bold underline">Vision</a></li>
+            <li><a href="about.html" class="hover:text-accent">About</a></li>
+          </ul>
+        </nav>
+        <button id="toggleDark" class="ml-4 text-xl px-1 py-1 rounded bg-primary text-white dark:bg-white dark:text-primary transition-colors">🌔</button>
+            <script>
+                const toggleBtn = document.getElementById('toggleDark');
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('dark');
+                    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+                });
+                if (localStorage.getItem('theme') === 'dark') {
+                    document.documentElement.classList.add('dark');
+                }
+            </script>
+      </div>
+    </header>
+    <main class="pt-28">
+    </main>
+    </script>
+<head>
+    <title>Baguio Businesses - Map Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+
+        .map-grid-container {
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; 
+            padding: 20px;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding-bottom: 10px;
+        }
+
+        .map-item h3 {
+            text-align: center;
+            margin: 15px 0 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .map-item h4 {
+            text-align: center;
+            margin: 15px 0 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+  
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+
+        @media (max-width: 767px) {
+            .map-grid-container {
+                grid-template-columns: 1fr; 
+                padding: 10px;
+                gap: 15px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .map-grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    </style>
+</head>
+<section class="flex flex-col items-center justify-center gap-6 bg-white dark:bg-gray-800 p-10 rounded-lg shadow max-w-4xl mx-auto">
+  <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" 
+       alt="Food" 
+       class="rounded-lg w-1/2 md:w-1/3 shadow-md mb-6">
+       
+  <div class="text-center">
+    <h2 class="text-4xl font-bold mb-4">
+      BHF Baguio Group of Companies 
+      <span class="text-primary">Vision</span>
+    </h2>
+    <p class="text-lg font-bold italic mb-6">
+      "To unite diverse businesses under a shared purpose: delivering trustworthy solutions while cultivating a lasting culture of growth, excellence and success."
+    </p>
+  </div>
+</section>
+
+<body>
+
+      <section class="text-center mb-12">
+    <h1 class="text-4xl font-bold"><span class="text-accent"></span></h1>
+    <p class="text-gray-600 dark:text-gray-400 mt-2"></p>
+  <section class="py-16 bg-white-100 dark:bg-gray-900">
+    
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl font-bold">BHF<span class="text-accent">Core Values</span></h2>
+      <p class="text-center text-gray-600 dark:text-gray-300 mb-12">Company new set of Core Values</p>
+  
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        
+      
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition p-6 flex flex-col items-center text-center">
+          <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" alt="Order Online" class="w-32 h-32 object-cover rounded-full mb-4">
+          <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">MALASAKIT</h3>
+          <p class="text-gray-600 dark:text-gray-300 font-bold italic mb-4">Trust, Kindness, Care, Honesty, Concern.</p>
+        </div>
+  
+      
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition p-6 flex flex-col items-center text-center">
+          <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" alt="Order Online" class="w-32 h-32 object-cover rounded-full mb-4">
+          <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">PROFESSIONALISM</h3>
+          <p class="text-gray-600 dark:text-gray-300 font-bold italic mb-4">Commitment, Dedication, Steadfast Service, Quality of work.</p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition p-6 flex flex-col items-center text-center">
+          <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" alt="Order Online" class="w-32 h-32 object-cover rounded-full mb-4">
+          <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">UNITY IN DIVERSITY</h3>
+          <p class="text-gray-600 dark:text-gray-300 font-bold italic mb-4">Collaboration, Teamwork, Strong Bond, Camaraderie.</p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition p-6 flex flex-col items-center text-center">
+          <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" alt="Order Online" class="w-32 h-32 object-cover rounded-full mb-4">
+          <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">GROWTH</h3>
+          <p class="text-gray-600 dark:text-gray-300 font-bold italic mb-4">Personal Development, Innovation, Transformation, Open to change, Career growth, Adaptability.</p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow hover:scale-105 transition p-6 flex flex-col items-center text-center">
+          <img src="https://i.pinimg.com/736x/82/92/bb/8292bbc63cabc5e82b582f429c743f9a.jpg" alt="Order Online" class="w-32 h-32 object-cover rounded-full mb-4">
+          <h3 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">INTEGRITY</h3>
+          <p class="text-gray-600 dark:text-gray-300 font-bold italic mb-4">Honesty, Accountability, Good Conscience, Morals, Values, ethical.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<div class="text-center md:text-center">
+  <a href="index.html" class="inline-block px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition">
+            Back to Homepage</a>
+        </div>
+
+
+
+
+
+<footer class="bg-gray-100 dark:bg-gray-800 mt-20 py-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center"> <h4 class="font-bold text-lg mb-4">Support Links</h4>
+      <ul class="flex justify-center space-x-4 text-sm"> <li><a href="faqs.html" class="hover:underline">FAQs</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        <li><a href="agreement.html" class="hover:underline">Terms of Agreement</a></li>
+        <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-sm text-gray-500 dark:text-gray-400 mt-10">
+    © 2025 BHF | All rights Reserved.
+  </div>
+</footer>
+    
+      </body>
+      </html>
+      
